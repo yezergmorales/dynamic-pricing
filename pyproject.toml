@@ -1,0 +1,50 @@
+[project]
+name = "dynamic-pricing" #TODO: Update to the project name
+version = "0.1.0"
+description = "Add your description here" #TODO: Update to the project name
+authors = [{ name = "Yezer Gonzalez", email = "yezergm@gmail.com" }]
+readme = "README.md"
+keywords = ['Python', 'template', 'uv']
+requires-python = ">=3.12.8"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "kagglehub>=0.3.12",
+    "make>=0.1.6.post2",
+    "matplotlib>=3.10.3",
+    "mypy>=1.14.1",
+    "pandas>=2.2.3",
+    "pytest>=8.3.5",
+    "python-dotenv>=1.1.0",
+    "ruff>=0.8.6",
+    "seaborn>=0.13.2",
+]
+
+# Remove it if it is not needed or if you don't have an entry point
+[project.scripts]
+"app" = "my_package.main:main" #TODO: Update to the project name
+
+[tool.mypy]
+strict = true
+ignore_missing_imports = true
+allow_untyped_globals = false
+allow_redefinition = true
+check_untyped_defs = true
+color_output = true
+error_summary = true
+pretty = true
+
+[tool.ruff]
+target-version = "py312" 
+line-length = 120
+indent-width = 4
+fix = true
+
+[tool.ruff.format]
+indent-style = "space"
+line-ending = "auto"
+quote-style = "double"
+skip-magic-trailing-comma = false
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
