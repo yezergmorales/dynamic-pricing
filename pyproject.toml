@@ -7,12 +7,15 @@ readme = "README.md"
 keywords = ['Python', 'template', 'uv']
 requires-python = ">=3.12.8"
 dependencies = [
+    "folium>=0.19.7",
     "ipykernel>=6.29.5",
     "kagglehub>=0.3.12",
     "make>=0.1.6.post2",
     "matplotlib>=3.10.3",
     "mypy>=1.14.1",
+    "nbformat>=4.2.0",
     "pandas>=2.2.3",
+    "plotly>=6.1.2",
     "pytest>=8.3.5",
     "python-dotenv>=1.1.0",
     "ruff>=0.8.6",
