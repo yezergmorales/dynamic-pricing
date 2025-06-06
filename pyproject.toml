@@ -8,6 +8,7 @@ keywords = ['Python', 'template', 'uv']
 requires-python = ">=3.12.8"
 dependencies = [
     "folium>=0.19.7",
+    "holidays>=0.74",
     "ipykernel>=6.29.5",
     "kagglehub>=0.3.12",
     "make>=0.1.6.post2",
@@ -19,7 +20,10 @@ dependencies = [
     "pytest>=8.3.5",
     "python-dotenv>=1.1.0",
     "ruff>=0.8.6",
+    "scikit-learn>=1.7.0",
+    "scipy>=1.15.3",
     "seaborn>=0.13.2",
+    "torch>=2.7.1",
 ]
 
 # Remove it if it is not needed or if you don't have an entry point
